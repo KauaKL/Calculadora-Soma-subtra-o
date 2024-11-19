@@ -20,6 +20,8 @@
             <select id="operacao" name="operacao">
                 <option value="soma">Soma</option>
                 <option value="subtracao">Subtração</option>
+                <option value="multiplicacao">Multiplicação</option>
+                <option value="divisao">Divisão</option>
             </select>
             
             <button type="button" onclick="calcular()">Calcular</button>
@@ -45,6 +47,10 @@
                     resultado = num1 + num2;
                 } else if (operacao === "subtracao") {
                     resultado = num1 - num2;
+                } else if (operacao === "multiplicacao") {
+                    resultado = num1 * num2;
+                } else if (operacao === "divisao") {
+                    resultado = num1 / num2;
                 } else {
                     resultado = "Operação inválida.";
                 }
